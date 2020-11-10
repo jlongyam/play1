@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-type" content="text/html" />
+  <meta http-equiv="X-UA-Compatibel" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+  <title>Preview</title>
+<style type="text/css">
+*,*::before,*::after { box-sizing: border-box; }
+html { height: 100%; }
+body {
+  margin: 0;
+  font-family: Consolas, Monospace;
+  font-size: 100%;
+  padding: 2.5%;
+  }
+pre {
+	font-size: 125%;
+	margin: 0;
+	}
+	pre:focus { outline: 0 }
+hr {
+  margin: 1em 0;
+  border: 0;
+  border-bottom: 2px solid gray;
+  }
+</style>
+</head>
+<body>
+<div>
+  <a href="javascript:void(0)" onclick="document.write( source.textContent )">preview</a>
+</div>
+<hr />
+<pre id="source" contenteditable="true" spellcheck="false">
+<b>&lt;!DOCTYPE html&gt;</b>
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta http-equiv="content-type" content="text/html" /&gt;
+  &lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;
+  &lt;title&gt;TITLE&lt;/title&gt;
+  <b>&lt;style type="text/css"&gt;</b>
+    #output {
+      <mark>font-family: Consolas, Monospace;</mark>
+      font-size: 100%; }
+  <b>&lt;/style&gt;</b>
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;pre id="output"&gt;
+    OUTPUT
+  &lt;/pre&gt;
+  <b>&lt;script type="text/javascript"&gt;</b>
+    output.textContent = 'TODO'
+  <b>&lt;/script&gt;</b>
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+<hr />
+<pre><a href="javascript:void(0)">save change</a></pre>
+</body>
+</html>
